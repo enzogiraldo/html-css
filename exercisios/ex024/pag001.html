@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste de iframe</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        p{
+            text-align: justify;
+            margin: 20px;
+        }
+        h1 {
+            text-align: center;
+            font-weight: 1.3em;
+            
+        }
+        table{
+            border-collapse: collapse;
+            width: 500px;
+            margin: auto;
+        }
+        caption {
+            padding: 8px;
+            font-size: 1.3em;
+            font-weight: bolder;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+        tr:nth-child(odd) {
+            background-color: rgb(121, 121, 121);
+            color: white;
+        }
+        div#container {
+            overflow: auto;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Tabelas em telas pequenas</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore cum eos assumenda, blanditiis unde voluptatibus neque nobis magni cumque distinctio veritatis veniam repudiandae. Maiores dolorem praesentium ad nulla quas maxime!
+    </p>
+     <div id="container">
+         <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Produto</th>
+                    <th>Quantidade</th>
+                    <th>Preço</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Linhas repetidas para simular tabela longa -->
+                <tr><td>1</td><td>Produto A</td><td>10</td><td>R$ 100,00</td></tr>
+                <tr><td>2</td><td>Produto B</td><td>5</td><td>R$ 50,00</td></tr>
+                <tr><td>3</td><td>Produto C</td><td>20</td><td>R$ 200,00</td></tr>
+                <tr><td>4</td><td>Produto D</td><td>2</td><td>R$ 20,00</td></tr>
+                <tr><td>5</td><td>Produto E</td><td>15</td><td>R$ 150,00</td></tr>
+                <tr><td>6</td><td>Produto F</td><td>8</td><td>R$ 80,00</td></tr>
+                <tr><td>7</td><td>Produto G</td><td>12</td><td>R$ 120,00</td></tr>
+                <tr><td>8</td><td>Produto H</td><td>3</td><td>R$ 30,00</td></tr>
+                <tr><td>9</td><td>Produto I</td><td>7</td><td>R$ 70,00</td></tr>
+                <tr><td>10</td><td>Produto J</td><td>25</td><td>R$ 250,00</td></tr>
+                <tr><td>11</td><td>Produto K</td><td>1</td><td>R$ 10,00</td></tr>
+                <tr><td>12</td><td>Produto L</td><td>9</td><td>R$ 90,00</td></tr>
+                <tr><td>13</td><td>Produto M</td><td>4</td><td>R$ 40,00</td></tr>
+                <tr><td>14</td><td>Produto N</td><td>6</td><td>R$ 60,00</td></tr>
+                <tr><td>15</td><td>Produto O</td><td>11</td><td>R$ 110,00</td></tr>
+                <!-- Adicione mais linhas <tr> conforme necessário -->
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2"><strong>Total Itens</strong></td>
+                    <td colspan="2"><strong>150 unidades</strong></td>
+                </tr>
+            </tfoot>
+             </table>
+     </div>
+</body>
+</html>
