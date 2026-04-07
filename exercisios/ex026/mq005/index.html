@@ -11,7 +11,7 @@
     <header>
         <h1>Meu site</h1>
         <span onclick="clickMenu()" id="burguer" class="material-symbols-outlined">menu</span>
-        <nav class="itens">
+        <nav id="itens">
             <ul>
                 <li><a href="#">Opção 1</a></li>
                 <li><a href="#">Opção 2</a></li>
@@ -30,14 +30,14 @@
         </article>
     </main>
     <script>
-        function clicMenu() {
-    var itens = document.getElementById("itens");
-    if (itens.style.display == 'block') {
-        itens.style.display = "none";
-    } else {
-        itens.style.display = 'block';
-    }
+   // Adicione o "k" para coincidir com o onclick="clickMenu()" do seu span
+function clickMenu() { 
+    const itens = document.getElementById("itens");
+    const isVisible = window.getComputedStyle(itens).display === 'block';
+    
+    itens.style.display = isVisible ? 'none' : 'block';
 }
+
     </script>
 </body>
 </html>

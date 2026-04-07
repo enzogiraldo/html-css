@@ -15,6 +15,21 @@ header > h1 {
     padding: 10px;
     text-align: center;
 }
+ span#burguer {
+    background-color: rgb(70, 70, 70);
+    color: white;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+span#burguer:hover {
+    background-color: white;
+    color: black;
+}
+#itens { display: none; }
+
+#itens.active { display: block; }
 
 nav {
     display: none;
