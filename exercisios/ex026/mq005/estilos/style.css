@@ -45,6 +45,9 @@ nav > ul > li > a{
     color: white;
     text-align: center;
     border-top: 2px solid white;
+} nav > ul > li > a:hover {
+    background-color: rgb(170, 151, 151);
+    color: black;
 }
 main{
     background-color: white;
